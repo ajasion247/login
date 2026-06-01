@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background:#f4f4f44f;
+    }
+
+    .container{
+        width:800px;
+        height:450px;
+        display:flex;
+        background:rgba(255, 255, 255, 0.377);
+        box-shadow:0 0 10px rgba(0, 0, 0, 0.2);
+        border-radius:10px;
+        overflow:hidden;
+    }
+
+    .left{
+        width:50%;
+    }
+
+    .left img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+
+    .right{
+        width:50%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+         background:#f4f4f41f;
+    }
+
+    form{
+        width:80%;
+    }
+
+    h2{
+        text-align:center;
+        margin-bottom:20px;
+    }
+
+    input[type="email"],
+    input[type="password"]{
+        width:100%;
+        padding:10px;
+        margin-bottom:15px;
+        border:1px solid #cccccc17;
+        border-radius:5px;
+    }
+
+    .checkbox{
+        margin-bottom:20px;
+    }
+
+    .btn-container{
+        text-align:center;
+    }
+
+    button{
+        padding:10px 30px;
+        border:none;
+        background:#b3ff00;
+        color:rgba(255, 255, 255, 0.397);
+        border-radius:5px;
+        cursor:pointer;
+    }
+
+    button:hover{
+        background:#00b327;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Left Division -->
+    <div class="left">
+        <img src="C:\Users\user\Pictures\MY PICS\file_00000000efd071fab4a596df161ff52c.png" alt="Login Image">
+    </div>
+
+    <!-- Right Division -->
+    <div class="right">
+        <form>
+            <h2>Login</h2>
+
+            <input type="email" placeholder="Enter Email" required>
+
+            <input type="password" placeholder="Enter Password" required>
+
+            <div class="checkbox">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember Me</label>
+            </div>
+
+            <div class="btn-container">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
